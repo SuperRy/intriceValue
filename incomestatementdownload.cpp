@@ -10,19 +10,19 @@
 
 // FIRST STEP
 /*. Go to the Configuration Properties -> Linker -> Input window.
-In the “Additional Dependencies” field, type urlmon.lib and press enter.
+In the â€œAdditional Dependenciesâ€ field, type urlmon.lib and press enter.
 Apply your changes, and close the project properties window. */
 
 // NEXT STEP
 /* Configuration Properties -> General window.
-Notice what the “Character Set” field is set to.
-“Not Set” corresponds to using the ASCII character set.*/
+Notice what the â€œCharacter Setâ€ field is set to.
+â€œNot Setâ€ corresponds to using the ASCII character set.*/
 
 // info on how this all works
 /*This function returns an HRESULT error code, which is really just a long.
 When dealing with HRESULTs, just keep in mind that zero is returned as success.
 Therefore, it is always best to explicitly use the error code definitions, such as S_OK for success.*/
-
+//this is a dll file
 #define DLL_EXPORT
 #if defined DLL_EXPORT
 #define DECLDIR __declspec(dllexport)
